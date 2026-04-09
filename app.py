@@ -6,10 +6,10 @@ st.title('🛒 E-Commerce Sales Dashboard')
 st.write('Analysis of 100K+ Brazilian E-Commerce Orders')
 
 # Load data
-orders = pd.read_csv(r'C:\Users\pdeva\ecommerce\data\olist_orders_dataset.csv')
-customers = pd.read_csv(r'C:\Users\pdeva\ecommerce\data\olist_customers_dataset.csv')
-payments = pd.read_csv(r'C:\Users\pdeva\ecommerce\data\olist_order_payments_dataset.csv')
-order_items = pd.read_csv(r'C:\Users\pdeva\ecommerce\data\olist_order_items_dataset.csv')
+orders = pd.read_csv('data/olist_orders_dataset.csv')
+customers = pd.read_csv('data/olist_customers_dataset.csv')
+payments = pd.read_csv('data/olist_order_payments_dataset.csv')
+order_items = pd.read_csv('data/olist_order_items_dataset.csv')
 
 # Clean
 orders_clean = orders[orders['order_status'] == 'delivered']
